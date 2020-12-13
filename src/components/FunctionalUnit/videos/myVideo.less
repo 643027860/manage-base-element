@@ -1,0 +1,23 @@
+.myItemVideo{
+  .video-js{
+    /* 对大播放按钮的样式进行设置 */
+    .vjs-big-play-button{
+      width: 100px;
+      height: 60px;
+      border-radius: 10px;
+    }
+    /* 去掉小播放按钮的outline */
+    .vjs-control{
+      outline: 0;
+    }
+  }
+  video{
+    overflow: hidden;
+  }
+  // 设置全屏封面图
+  .vjs-poster{
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    object-fit:fill;
+  }
+}

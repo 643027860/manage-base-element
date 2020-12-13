@@ -1,0 +1,36 @@
+/* PC和移动端基本的改动样式 */
+
+// Avator.vue中的头像下拉框outline边边
+.el-dropdown-link{
+  outline: 0;
+}
+.el-dropdown-menu{
+  padding: 0!important;
+  margin-top: 0!important;
+}
+.el-dropdown-menu__item--divided{
+  margin-top: 0;
+  &:before{
+    height: 0!important;
+  }
+}
+
+// 表格样式,这里设置了padding为9px，从而实现每行（td）50px
+.el-table{
+  .el-table__body{
+    .el-table__row{
+      td{
+        padding: 9px 0;
+        padding: 0.45rem 0;
+      }
+    }
+  }
+}
+
+//表单样式，1：每个元素的margin：5px 10px;
+.el-form{
+  .el-form-item{
+    margin: 5px 10px;
+    margin: 0.25rem 0.5rem;
+  }
+}
